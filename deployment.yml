@@ -21,7 +21,7 @@ jobs:
    schedule: 0 0 * * * # This example will run every day at midnight.
    steps:
      - name: run models
-       command: dbt run --select stg_trstg_transactions daily_revenue 
+       command: dbt run --select stg_transactions daily_revenue 
 
  - name: weekdays
    schedule: 30 7 * * 1-5 # The example will run every weekday at 7:30am.
