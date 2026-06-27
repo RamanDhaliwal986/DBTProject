@@ -1,3 +1,9 @@
+{{ config(
+    materialized='table',
+    database='ANALYTICS',
+    schema='MARTS'
+) }}
+
 select
     transaction_date,
     sum(amount) as total_revenue,
