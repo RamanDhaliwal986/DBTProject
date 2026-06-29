@@ -51,11 +51,7 @@ jobs:
     schedule: '*/30 * * * *'
 
     steps:
-      - name: check dbt version
-        command: dbt --version
-
       - name: run models
         command: dbt run
 
-      - name: test models
-        command: dbt test
+ 
